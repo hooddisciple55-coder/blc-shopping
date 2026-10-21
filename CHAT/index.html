@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BLC SHOPPING | Shop Anything, Anywhere</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="topbar">Welcome to BLC SHOPPING — Great finds, great prices!</div>
+
+  <header>
+
+    <a class="logo" href="#">🛍️ BLC <span>SHOPPING</span></a>
+
+    <form id="searchForm">
+
+      <input id="search" type="search" placeholder="Search products, brands and sellers...">
+
+      <button type="submit">🔍</button>
+
+    </form>
+
+    <button class="header-btn" id="sellButton">＋ Sell</button>
+
+    <button class="header-btn" id="cartButton">🛒 Cart (<span id="cartCount">0</span>)</button>
+
+  </header>
+
+  <nav>
+
+    <button data-category="All">Home</button>
+
+    <button data-category="Electronics">Electronics</button>
+
+    <button data-category="Fashion">Fashion</button>
+
+    <button data-category="Home & Living">Home & Living</button>
+
+    <button data-category="Beauty">Beauty</button>
+
+    <button data-category="Food & Grocery">Food & Grocery</button>
+
+    <button data-category="Sports">Sports</button>
+
+  </nav>
+
+  <main>
+
+    <section class="hero">
+
+      <div>
+
+        <p class="eyebrow">THE BLC SHOPPING EXPERIENCE</p>
+
+        <h1>Shop anything.<br><span>Love the price.</span></h1>
+
+        <p>Discover electronics, fashion, food, home essentials and more.</p>
+
+        <button class="primary" id="shopNow">Shop Now →</button>
+
+      </div>
+
+      <div class="hero-emoji">🛍️ 🎧 👟 📱</div>
+
+    </section>
+
+    <section class="benefits">
+
+      <div>🚚 <b>Convenient shopping</b></div>
+
+      <div>🔒 <b>Secure checkout</b></div>
+
+      <div>🏪 <b>Independent sellers</b></div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="section-title">
+
+        <div>
+
+          <p class="eyebrow">FIND YOUR FAVOURITES</p>
+
+          <h2 id="heading">Popular Products</h2>
+
+        </div>
+
+        <select id="sort">
+
+          <option value="popular">Popular</option>
+
+          <option value="low">Price: low to high</option>
+
+          <option value="high">Price: high to low</option>
+
+        </select>
+
+      </div>
+
+      <div class="products" id="products"></div>
+
+      <p id="empty" hidden>No products found. Try another search.</p>
+
+    </section>
+
+    <section class="seller-banner">
+
+      <div>
+
+        <p class="eyebrow">SELL ON BLC SHOPPING</p>
+
+        <h2>Have products to sell?</h2>
+
+        <p>Reach new customers. Listing fee: <strong>₦3,000 per product.</strong></p>
+
+      </div>
+
+      <button class="primary" id="sellBanner">Start Selling →</button>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <a class="logo" href="#">🛍️ BLC <span>SHOPPING</span></a>
+
+    <p>Shop. Sell. Grow together.</p>
+
+    <small>Product prices are shown in Nigerian naira.</small>
+
+  </footer>
+
+  <div id="modal" class="modal-backdrop" hidden>
+
+    <section class="modal">
+
+      <div class="modal-heading">
+
+        <h2 id="modalTitle">BLC SHOPPING</h2>
+
+        <button id="closeModal" class="close">✕</button>
+
+      </div>
+
+      <div id="modalContent"></div>
+
+    </section>
+
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
